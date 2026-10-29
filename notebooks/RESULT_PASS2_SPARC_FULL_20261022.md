@@ -1,0 +1,13 @@
+# RESULT_PASS2_SPARC_FULL_20261022 [UNRATIFIED]
+pass2_sparc_full_20261022.py; report pass2_sparc_full_20261022_report.txt; csv pass2_sparc_full_points_20261022.csv, pass2_vlast_20261022.csv. JM 16:52 'yes' (Pass 2 = simulated-Lelli items 13-15).
+## 13. Sample
+Lelli-style selection (Q<=2, inc>=30, dV/V<0.1): 153 galaxies pass Q/inc, 147 keep points, 2696 points (McGaugh+2016: 153 / 2693 -- points agree). Ours was 149 galaxies (inc>30, vbar2>0) cut to 120 by V_f>0. All 153 solved with sigma from M_b (no V_f needed).
+Universal rho_c 10^7.45, Lelli-style points, median data-model per bin (RAR function alongside): high/intermediate bins (lg gb/a0 >= -1.25) within +0.04; LOW bins -2.0..-1.25: -0.052, -0.078, -0.064 (model ABOVE data) vs RAR function <= 0.033. Overall rms data-model 0.155 vs data-RARfn 0.133.
+The 27 galaxies without V_f (183 points), previously excluded: median data-model -0.068, low bins -0.15..-0.08 (RAR fn -0.06 overall). The V_f cut favoured the law in the low-g bins -- Lelli's point CONFIRMED.
+## 14. V(R_last)
+Model/obs at the last point (universal rho_c): median 1.017 (16-84%: 0.855-1.181), N 147. vs Sigma_h: Spearman -0.30 (p 2e-4): low-Sigma quartile 1.085, high 0.98 -> the law over-predicts outer speeds of LSB galaxies by ~8% and under-predicts HSB by ~2%. vs M_b: none (-0.03). With V_f: V_model(R_last)/V_f 1.002 vs V_obs(R_last)/V_f 1.006 -> no systematic approach from below overall (Lelli's 'from below' is NOT a sample property; NGC 2403/2841 are individual). The Sigma trend is the surface-density dependence conceded in sec 4.1, now visible in the outer curves.
+## 15. Residuals and scatter
+Per-point Spearman, law vs RAR fn: log r -0.17 vs -0.04; log Sigma_h +0.25 vs +0.18; f_gas -0.20 vs -0.15; log M_b -0.01 vs +0.07 -> the law has a radial residual trend the RAR function lacks and slightly stronger Sigma/f_gas trends.
+Error-injected scatter (D, i, 0.1 dex M/L, velocity errors; 50 realisations): law+errors 0.11-0.16 vs data 0.10-0.23 per bin; at low g 0.146-0.164 vs 0.141-0.157 (law+errors at or slightly ABOVE data). The law's intrinsic scatter (0.07-0.11 at low g) is at the upper end allowed; the old claim (model 0.05-0.09 vs data 0.13-0.19, 'room for errors') is WITHDRAWN as not like-for-like.
+## Draft consequences (proposed)
+Abstract '0.07 dex over three decades' -> '0.08 dex' and add the Sigma failure; sec 3.1 numbers -> full-sample table; scatter sentence -> error-injected comparison; sample paragraph -> no V_f cut (153 / 2696 points), rising galaxies reported separately; sec 4.1/7: V(R_last) Sigma trend; residual radial trend stated.
