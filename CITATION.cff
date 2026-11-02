@@ -6,6 +6,14 @@ authors:
     given-names: James Richard
     orcid: "https://orcid.org/0009-0004-5112-0181"
 version: 2.0.0
+doi: 10.5281/zenodo.23781856
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23781855
+    description: "All versions of this software archive (concept DOI)"
+  - type: url
+    value: "https://github.com/Jimmnj/gprf-v2"
+repository-code: "https://github.com/Jimmnj/gprf-v2"
 date-released: 2026-10-28
 license: CC0-1.0
 preferred-citation:

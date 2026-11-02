@@ -1,0 +1,29 @@
+PREREG_NS_20261030 metrics from marg_ns_20261030.jsonl: 1029 results
+coverage: A@0: 147 gal, B@0: 147 gal, B@0.03: 147 gal, B@0.06: 147 gal, U@0: 147 gal, U@0.03: 147 gal, U@0.06: 147 gal
+
+M2 summed logZ by sig_int (common galaxies within arm):
+  arm U (N=147): sig 0: -13065.1  sig 0.03: -10080.7  sig 0.06: -10248.1  -> preferred sig_int 0.03
+  arm B (N=147): sig 0: -13092.9  sig 0.03: -10190.6  sig 0.06: -10302.5  -> preferred sig_int 0.03
+
+M1 Delta logZ (U - B) summed, per sig_int:
+  sig 0: N=147  sum +27.8 +- 3.4  | galaxies with Delta>+2.5: 56, < -2.5: 40  | median per-galaxy +0.23
+  sig 0.03: N=147  sum +109.9 +- 2.7  | galaxies with Delta>+2.5: 44, < -2.5: 40  | median per-galaxy +0.22
+  sig 0.06: N=147  sum +54.5 +- 2.3  | galaxies with Delta>+2.5: 33, < -2.5: 30  | median per-galaxy +0.02
+  at each arm's preferred sig_int (U@0.03 vs B@0.03): sum +109.9 (N=147)
+
+M3 Delta logZ (A - U) at sig_int 0:
+  N=147  sum +1909.0 +- 3.4 | >+2.5: 61, <-2.5: 10
+
+M4 posterior-median distance shifts z_D (prior sigmas), at each arm's preferred sig_int:
+  arm U@0.03: N=147  rms 1.39  |zD|>2: 18  |zD|>3: 8  median 16-84 width 1.10
+  arm B@0.03: N=147  rms 1.22  |zD|>2: 15  |zD|>3: 3  median 16-84 width 1.20
+  arm A@0: N=147  rms 1.26  |zD|>2: 13  |zD|>3: 6  median 16-84 width 1.37
+
+M5 posterior-median residual rms: A@0 0.039  B@0 0.053  B@0.03 0.054  B@0.06 0.059  U@0 0.054  U@0.03 0.056  U@0.06 0.061
+
+DECISIONS
+D1 (Q1): FAVOURS universal-rho_c relation (sum Delta logZ +109.9)  -- D4: distance shifts comparable (U 18 vs B 15 beyond 2 sigma)
+D2 (Q2): scatter tension NOT CONFIRMED (preferred sig_int U 0.03, B 0.03)
+D3 (Q3): per-galaxy rho_c SUPPORTED (sum Delta logZ A-U +1909.0)
+
+run time: total 293.5 core-hours; median per job U 1100 s, B 8 s, A 1518 s

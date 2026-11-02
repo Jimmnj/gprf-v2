@@ -1,0 +1,12 @@
+PREREG_CDR_20261030 run 2026-10-30 23:39  N(OBS, i<=85)=129  52 s
+OBS    N=129  beta=0.578+-0.048  Sig0=  1678 Sigcrit=  1263  resid rms 0.215 | Delta vs OBS: rms 0.000 med +0.000 | C1 True C2 True C3 True -> D1 True
+A0     N=129  beta=0.626+-0.035  Sig0=  4140 Sigcrit=  4246  resid rms 0.203 | Delta vs OBS: rms 0.167 med -0.020 | C1 False C2 True C3 True -> D1 False
+U0     N=129  beta=0.276+-0.071  Sig0=   266 Sigcrit=   180  resid rms 0.170 | Delta vs OBS: rms 0.214 med -0.012 | C1 False C2 False C3 True -> D1 False
+R0     N=129  beta=0.373+-0.048  Sig0=   475 Sigcrit=   337  resid rms 0.149 | Delta vs OBS: rms 0.215 med +0.006 | C1 False C2 False C3 True -> D1 False
+B0     N=129  beta=0.496+-0.025  Sig0=  1647 Sigcrit=  1407  resid rms 0.120 | Delta vs OBS: rms 0.213 med +0.034 | C1 False C2 True C3 True -> D1 False
+A_map  N=128  beta=0.626+-0.031  Sig0=  9873 Sigcrit= 15067  resid rms 0.207 | Delta vs OBS: rms 0.164 med -0.002 | C1 False C2 True C3 True -> D1 False
+U_map  N=128  beta=0.542+-0.037  Sig0=  2067 Sigcrit=  2112  resid rms 0.191 | Delta vs OBS: rms 0.168 med -0.017 | C1 False C2 True C3 True -> D1 False
+R_map  N=128  beta=0.460+-0.054  Sig0=   879 Sigcrit=   635  resid rms 0.209 | Delta vs OBS: rms 0.151 med -0.025 | C1 False C2 True C3 True -> D1 False
+B_map  N=128  beta=0.606+-0.025  Sig0= 22032 Sigcrit= 44128  resid rms 0.187 | Delta vs OBS: rms 0.156 med +0.045 | C1 False C2 True C3 True -> D1 False
+D2 (CDR requires varying rho_c): YES  [beta_U0 0.276 vs beta_OBS 0.578+-0.048; A0 C2 True]
+external: Lelli+2016 beta 0.62+-0.04 (alpha=1 fixed); MOND low-Sigma slope 0.5

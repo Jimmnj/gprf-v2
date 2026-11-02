@@ -1,0 +1,8 @@
+PREREG_RHOC_RULES run 2026-10-30 21:34  69 s  BG: log A = 6.75 (chi2-optimal), 6.95 (rms-optimal)
+A0   n=147  S1 rms 0.0857 (low-g 0.0958)  S2 beta 0.626+-0.035 C2 True  S3 med chi2/N 2.54  S4 rho_s 1.00 rms dlrc 0.00  sd lrc 0.56  clipped 0
+U0   n=147  S1 rms 0.1551 (low-g 0.1799)  S2 beta 0.276+-0.071 C2 False  S3 med chi2/N 14.36  S4 rho_s nan rms dlrc 0.56  sd lrc 0.00  clipped 0
+R0   n=147  S1 rms 0.1397 (low-g 0.1635)  S2 beta 0.373+-0.048 C2 False  S3 med chi2/N 14.54  S4 rho_s 0.43 rms dlrc 0.52  sd lrc 0.22  clipped 0
+BG   n=147  S1 rms 0.1573 (low-g 0.1815)  S2 beta 0.534+-0.055 C2 True  S3 med chi2/N 15.70  S4 rho_s 0.16 rms dlrc 0.59  sd lrc 0.21  clipped 0
+CDR  n=147  S1 rms 0.2000 (low-g 0.1857)  S2 beta 0.596+-0.014 C2 True  S3 med chi2/N 18.95  S4 rho_s 0.32 rms dlrc 0.96  sd lrc 0.92  clipped 21
+BG: D1 carries CDR True | D2 holds RAR False | D3 replaces fit False
+CDR: D1 carries CDR True | D2 holds RAR False | D3 replaces fit False
