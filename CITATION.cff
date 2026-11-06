@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this material, please cite the paper."
-title: "Galaxy dynamics from Newtonian gravity and a non-baryonic mass set by the baryons -- source, scripts and pre-registrations"
+title: "Can galaxy dynamics be explained by real non-baryonic mass and Newtonian gravity? -- source, scripts and pre-registrations"
 authors:
   - family-names: Marsen
     given-names: James Richard
     orcid: "https://orcid.org/0009-0004-5112-0181"
-version: 2.0.0
-doi: 10.5281/zenodo.23781856
+version: 2.0.1
+doi: 10.5281/zenodo.23995058
 identifiers:
   - type: doi
     value: 10.5281/zenodo.23781855
@@ -14,16 +14,16 @@ identifiers:
   - type: url
     value: "https://github.com/Jimmnj/gprf-v2"
 repository-code: "https://github.com/Jimmnj/gprf-v2"
-date-released: 2026-10-28
+date-released: 2026-11-05
 license: CC0-1.0
 preferred-citation:
   type: article
-  title: "Galaxy dynamics from Newtonian gravity and a non-baryonic mass set by the baryons"
+  title: "Can galaxy dynamics be explained by real non-baryonic mass and Newtonian gravity?"
   authors:
     - family-names: Marsen
       given-names: James Richard
       orcid: "https://orcid.org/0009-0004-5112-0181"
   year: 2026
-  doi: 10.5281/zenodo.23748074
+  doi: 10.5281/zenodo.23815559
   publisher:
     name: Zenodo

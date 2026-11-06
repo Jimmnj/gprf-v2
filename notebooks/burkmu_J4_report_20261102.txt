@@ -1,0 +1,3 @@
+arm M: N=147  log mu0 median 2.17  w(log mu0) median 0.116  <0.2: 144  <0.15: 113  <0.1: 58  | w(log rc) median 0.11  corr(rho0,rc) median -0.96  | effective params (prior mu 0.2, rc 0.87): mu 0.62 + rc 0.91 = 1.53
+arm K: N=147  log mu0 median 2.20  w(log mu0) median 0.147  <0.2: 106  <0.15: 75  <0.1: 39  | w(log rc) median 0.13  corr(rho0,rc) median -0.95  | effective params (prior mu 1.68, rc 0.87): mu 0.97 + rc 0.87 = 1.84
+rerun vs 11/01 run (M, 0.03): sum logZ -9480.1 vs -9483.6; per-galaxy diff rms 0.36, max |d| 1.66

@@ -1,0 +1,24 @@
+# PREREG_TWOCENTRE_B_20261102 -- the host's potential inside the satellite's OWN relation (body reading A')  [UNRATIFIED; written before code]
+# 2026-11-02 14:45 EST. Trigger: JM 14:31 "maybe something is unique when the satellite is so large"; JM 14:36 "let's try it". Companion to PREREG_TWOCENTRE_20261102 (one-field solve, D2).
+## 1. Question
+Under (A') the LMC is a body with sigma_LMC = 58.8 km/s. ONE-FIELD says its phi_b is the sum over ALL baryons, the Milky Way's included. The MW's potential deepens by ~v_c^2 x (r/D) across the LMC's halo: x ~ 7 in units of sigma_LMC^2 at 30 kpc toward the MW. No solve has included this term (the two-halo column is spherical with a density-match cut; n9/Rule A use the host only as ambient density). Does it raise the LMC's mass within 32.8 kpc toward (7.02 +- 0.9)e10 and extend the halo toward the MW to >= 53 kpc? And what does the same term do to the dwarf protocol?
+## 2. Model
+- Satellite's relation about its own centre: rho_exc = rho_c exp[S(x_b) - S(x_b0) - dphi_nb/sigma_sat^2] - rho_amb(d), S = 2 tanh(x/2), sigma_sat from the satellite's M_b (BTFR), rho_c 10^7.45.
+- x_b = [ -Phi_sat(r) - (Phi_host(d) - Phi_host(d_c)) ] / sigma_sat^2: the satellite's own potential (absolute) plus the HOST potential's DROP from the satellite's centre (the note: "both potentials enter as their drop from the centre"; the absolute host depth would saturate S everywhere and erase the satellite's own term, which is unphysical and is not the reading). x_b can be negative on the far side.
+- B1 (PRIMARY): Phi_host = MW baryons + MW unperturbed nb (RESULT_MW_DECLINE profile, 1D shoot, universal rho_c), both inside S (capped at e^2), mirroring the note's nesting rule exp(phi_body/sigma_host^2) capped at e^2 read in the other direction.
+- B2 (DIAGNOSTIC): MW baryons inside S; MW nb in the uncapped self-term dphi_nb. Expected to run away (an isothermal medium at 59 km/s in a 200 km/s potential flows into it); reported if so, not scored.
+- rho_amb(d) = MW nb density at distance d from the MW centre (same 1D profile) + 35.5; excess clipped at 0 beyond the density match (fig7/App C convention; R14 showed <= 0.001 dex vs the -rho_amb floor on dwarfs; here the floor would place -1e7 in the MW core on the satellite's grid, an artefact).
+- Self-term: the satellite's own excess potential, drop from its centre, multipoles l = 0..40 about the satellite, 96 mu nodes, 1200 log-radial points 0.05 to 0.9 D (the grid stops short of the host centre). Picard damped 0.3, Newton-Krylov fallback. MW one-field response to the LMC (1.2e9 within 30 kpc, today's run) is NOT added here (it is the host's term, already measured; adding it is a separate line in the table, not in the solve).
+- LMC: Plummer 3.0e9 a 1.5 at D 50. MW: spherical equivalents as in PREREG_TWOCENTRE sec 2.
+- Controls (same code, MW hosts only): Fornax (M_b 2.24e7, r_h 0.668, D 147), Sculptor (2.24e6, 0.260, 86), Crater II (2.56e5, 1.07, 117): spherically averaged M(<r) about the satellite fed to the n9 line-of-sight Jeans projection (approximation; the halo is now lopsided) vs the current protocol value and the observed dispersion.
+## 3. Outputs
+Excess nb mass within 10 / 30 / 32.8 / 50 kpc of the LMC (B1); same restricted to the near (toward MW) and far hemispheres; density-match radius along the axis toward and away from the MW (extent); M_LMC(<32.8) = baryons + B1 excess [+ one-field host term 1.2e9 listed separately]; spherical two-halo reference 4.33e10. Controls: sigma_los for the three dwarfs, B1 vs current vs observed.
+## 4. Expectation on record (Claude)
+The saturated host term acts like a larger rho_c on the near side; the isothermal tail density sigma^2/(2 pi G r^2) is independent of amplitude, so the far tail should not move much and the gain is in the core-to-tail transition. Guess: +20-50% within 32.8 kpc, near-side extent moves out by < 10 kpc, far side unchanged. M(<32.8) ~ 5-6.5e10. B2 diverges. Dwarfs: Fornax and Sculptor rise by 10-30% (worsening Fornax, 15.3 vs 11.7; Sculptor 8.6 -> ~10 vs 9.2); Crater II rises (worse). So the term is EXPECTED to help the LMC partially and to hurt Appendix B.
+## 5. Decision rule (before running)
+- BD1 RESOLVED: M(<32.8) >= 6.1e10 (within 1 sigma of Koposov) AND near-side density-match extent >= 53 kpc.
+- BD2 PARTIAL: M(<32.8) >= 5.2e10 (2 sigma) or extent >= 53, not both.
+- BD3 NO: below both. The LMC stays conceded at the LIT sec 4 numbers.
+- Appendix B cost: if the B1 term moves the dwarf protocol by > 0.05 dex rms or changes any PASS/FAIL, that is reported beside BD1-3 and JM rules whether the term is adopted at all (it cannot be adopted for the LMC and not for the dwarfs).
+## 6. Files: this; twocentre_b_20261102.py; RESULT_TWOCENTRE_B_20261102.md; rows added to GPRF_LMC_Mass_Ledger_20261102.xlsx.
+# END PREREG [UNRATIFIED; JM 14:36 "let's try it" taken as go]

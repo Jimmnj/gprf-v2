@@ -1,0 +1,36 @@
+PREREG_BURKMU metrics  (294 M jobs; coverage A@0:147, A@0.03:147, A@0.06:147, D@0.03:147, D@0.06:147, K@0.03:147, K@0.06:147, M@0.03:147, M@0.06:147, U@0:147, U@0.03:147, U@0.06:147)
+arm M: sig 0.03 -9483.6  sig 0.06 -10082.4 -> preferred 0.03
+arm K: sig 0.03 -9626.5  sig 0.06 -10232.0 -> preferred 0.03
+arm D: sig 0.03 -9545.2  sig 0.06 -10088.9 -> preferred 0.03
+arm A: sig 0.03 -9480.5  sig 0.06 -10023.2 -> preferred 0.03
+arm U: sig 0.03 -10080.7  sig 0.06 -10248.1 -> preferred 0.03
+
+J1 Delta ln Z (M minus arm) at preferred sig_int, and at 0.03:
+  M - A [pref]: N=147 sum -3.0 +- 3.0 | median -0.57 | >+2.5: 14, <-2.5: 18 | bulk(|d|<=20) -62.7 (N=145)
+  M - A [0.03]: N=147 sum -3.0 +- 3.0 | median -0.57 | >+2.5: 14, <-2.5: 18 | bulk(|d|<=20) -62.7 (N=145)
+  M - K [pref]: N=147 sum +142.9 +- 3.2 | median +1.40 | >+2.5: 3, <-2.5: 5 | bulk(|d|<=20) +142.9 (N=147)
+  M - K [0.03]: N=147 sum +142.9 +- 3.2 | median +1.40 | >+2.5: 3, <-2.5: 5 | bulk(|d|<=20) +142.9 (N=147)
+  M - D [pref]: N=147 sum +61.6 +- 3.0 | median -0.03 | >+2.5: 23, <-2.5: 20 | bulk(|d|<=20) -11.3 (N=145)
+  M - D [0.03]: N=147 sum +61.6 +- 3.0 | median -0.03 | >+2.5: 23, <-2.5: 20 | bulk(|d|<=20) -11.3 (N=145)
+  M - U [pref]: N=147 sum +597.2 +- 2.9 | median +0.42 | >+2.5: 55, <-2.5: 28 | bulk(|d|<=20) +229.9 (N=135)
+  M - U [0.03]: N=147 sum +597.2 +- 2.9 | median +0.42 | >+2.5: 55, <-2.5: 28 | bulk(|d|<=20) +229.9 (N=135)
+
+J2 Delta ln L_max (where stored):
+  M - K at 0.03: sum -6.5 over 147 (A lacks logLmax; RESULT_OCCAM: K - A = +97)
+  M - D at 0.03: sum +90.9 over 147 (A lacks logLmax; RESULT_OCCAM: K - A = +97)
+
+J3 distance shifts at preferred sig_int:
+  M: rms zD 0.56  >2sig 0  >3sig 0  rms(resid) 0.040
+  K: rms zD 0.57  >2sig 1  >3sig 0  rms(resid) 0.035
+  D: rms zD 0.59  >2sig 0  >3sig 0  rms(resid) 0.041
+  A: rms zD 1.08  >2sig 12  >3sig 1  rms(resid) 0.038
+  U: rms zD 1.39  >2sig 18  >3sig 8  rms(resid) 0.056
+
+J4 posterior widths (half 16-84, dex) at preferred sig_int; prior: M log mu0 N(.,0.2), log rc U[-1,2] (half-width 0.87); K both U (1.5 / 0.87):
+  M: median w(log rc) 0.11, w(log rho0) 0.21; independence bound on w(log mu0) median 0.24, <0.2 in 46/147; median log mu0 2.17 (prior 2.15)
+  K: median w(log rc) 0.13, w(log rho0) 0.26; independence bound on w(log mu0) median 0.31, <0.2 in 34/147; median log mu0 2.20 (prior 2.15)
+
+DECISIONS (stamped rule: |M-A|<=5 parity; M-A>+5 M wins; M-A<-5 relation economy survives)
+L1 M vs A: -3.0 -> PARITY
+L2 M vs K: +142.9 (expected > +100)
+L3 M vs D: +61.6

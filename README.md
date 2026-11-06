@@ -1,14 +1,18 @@
-# Galaxy dynamics from Newtonian gravity and a non-baryonic mass set by the baryons
+# Can galaxy dynamics be explained by real non-baryonic mass and Newtonian gravity?
+
+(v2.0.0 title: *Galaxy dynamics from Newtonian gravity and a non-baryonic mass set by the baryons*.)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23781855.svg)](https://doi.org/10.5281/zenodo.23781855)
 
 Source, analysis scripts and pre-registrations for
 
-> J. R. Marsen (2026), *Galaxy dynamics from Newtonian gravity and a non-baryonic mass set by the baryons*,
-> v2.0.0, Zenodo, [doi:10.5281/zenodo.23748074](https://doi.org/10.5281/zenodo.23748074)
+> J. R. Marsen (2026), *Can galaxy dynamics be explained by real non-baryonic mass and Newtonian gravity?*,
+> v2.0.1, Zenodo, [doi:10.5281/zenodo.23815559](https://doi.org/10.5281/zenodo.23815559)
+> (v2.0.0: [doi:10.5281/zenodo.23748074](https://doi.org/10.5281/zenodo.23748074))
 > (all versions: [10.5281/zenodo.23748073](https://doi.org/10.5281/zenodo.23748073)).
 
-This repository is archived on Zenodo: release v2.0.0 (tag `gprf-v2`, commit 047af73) is
+This repository is archived on Zenodo: release v2.0.1 (tag `gprf-v2.0.1`) is
+[doi:10.5281/zenodo.23995058](https://doi.org/10.5281/zenodo.23995058); release v2.0.0 (tag `gprf-v2`, commit 047af73) is
 [doi:10.5281/zenodo.23781856](https://doi.org/10.5281/zenodo.23781856); all versions:
 [10.5281/zenodo.23781855](https://doi.org/10.5281/zenodo.23781855).
 
@@ -16,10 +20,11 @@ This repository is archived on Zenodo: release v2.0.0 (tag `gprf-v2`, commit 047
 
 | Path | Contents |
 |---|---|
-| `paper/` | The posted PDF and its LaTeX source; `Marsen_2026_v2.0.0_annotated.tex` is the same text with the provenance tags (`[RESULT_...]`, `[script.py]`) that link each number to the record below; `figs_v2/` the figures |
+| `paper/` | The posted PDFs (v2.0.0, v2.0.1) and their LaTeX sources; `Marsen_2026_v2.0.x_annotated.tex` is the same text with the provenance tags (`[RESULT_...]`, `[script.py]`) that link each number to the record below; `figs_v2/` the figures |
 | `notebooks/` | Scripts (`*.py`), their outputs (`*.csv`), the result records (`RESULT_*.md`), the pre-registrations (`PREREG_*.md`, `RESULT_DWARF_PREREG_*.md`) and one derivation note |
 | `data/` | Small published tables used in the environment and lensing tests (see `data/README.md`) |
 | `tools/fetch_sparc.py` | Downloads SPARC (not redistributed) into `sparc_galaxy_data/` |
+| `tools/fetch_diskmass.sh` | Downloads the DiskMass Survey arXiv sources (not redistributed) into `data/diskmass/` (v2.0.1) |
 
 ## Reproducing
 
@@ -36,7 +41,7 @@ Scripts are run from `notebooks/` and read `../sparc_galaxy_data/` and `../data/
 The pre-registered runs take an argument, e.g. `python3 n16_closure_20261028.py S1` (parts S1, S3, S2, S2k) and
 `python3 sform_family_20261028.py univ` (or `rel3`). Figure scripts write to `notebooks/figs_v2/`; the paper's copies are in `paper/figs_v2/`.
 Two runs were re-executed from this layout before release and reproduce the archived reports exactly
-(`n16_closure_20261028.py S1`, `pass3_relation3_20261022.py`).
+(`n16_closure_20261028.py S1`, `pass3_relation3_20261022.py`). For v2.0.1, five of the new runs were re-executed from a clean copy of this layout and reproduce the archived outputs exactly (`rhoc_env_20261105.py`, `rhoc_corr_20261105.py`, `diversity_20261105.py`, `dms_fb_20261105.py`, `h2_refit_20261103.py`; the last after deleting its resumable `h2_refit_part.csv`).
 
 ## Where each section's numbers come from
 
@@ -61,6 +66,12 @@ Two runs were re-executed from this layout before release and reproduce the arch
 | Appendix C. Lensing: compatibility, truncation, satellites and the mass budget | `RESULT_N10`, `pass10_lensing_fixedVf_20261025.py`, `RESULT_SIMROUND_C1-C4`, `RESULT_LENSING_FIT_SATELLITES`, `RESULT_N11_PASS1_20261026`, `PREREG_N11_20261026` |
 | Appendix D. The environment test in full | `RESULT_N8B`, `RESULT_N8D` |
 | E.1 Cloud-9 | `RESULT_BODY_RULE_20261022` |
+| 2.3 Body rule and nesting; 7 LMC (v2.0.1, 11/02) | `twocentre_20261102.py`, `twocentre_twohalo_20261102.py`, `onefield_dwarfs_20261102.py`, `RESULT_TWOCENTRE_20261102`; `twocentre_b_20261102.py`, `RESULT_TWOCENTRE_B_20261102`; workbooks `GPRF_TwoCentre*_20261102.xlsx` |
+| 3 Sample (molecular gas; v2.0.1, 11/03) | `h2_refit_20261103.py`, `RESULT_H2_20261103`, `data/heracles2009/` |
+| B.3 primed Burkert; Occam (v2.0.1, 11/01-02) | `burkmu_ns_20261101.py`, `burkmu_ns_20261102.py` (samples stored), `burkmu_metrics_20261102.py`, `RESULT_BURKMU_20261102`; `occam_20261101.py`, `RESULT_OCCAM_20261101` |
+| A Milky Way local nb density (v2.0.1) | `mw_decline_20261021.py`, `RESULT_LOCAL_NB_DENSITY_20261101` |
+| B.1 environment, correlates, sigma free, diversity (v2.0.1, 11/05) | `rhoc_env_20261105.py`, `RESULT_RHOC_ENV_20261105`; `rhoc_corr_20261105.py`, `RESULT_RHOC_CORR_20261105`; `sigmafree_20261105.py`, `RESULT_SIGMAFREE_20261105`; `diversity_20261105.py`, `RESULT_DIVERSITY_20261105` |
+| 6.4 DiskMass baryon fractions (v2.0.1, 11/05) | `bash tools/fetch_diskmass.sh`, then `dms_fb_20261105.py`, `RESULT_DMS_20261105` |
 
 The `RESULT_*.md` files are the working records written when each run was made. They name the script,
 the inputs and the output files, and they are kept as written. A `[UNRATIFIED]` mark means the record was
@@ -83,6 +94,8 @@ Added for v2.0.1 (2026-10-30/31), in run order: `PREREG_MARG_20261030.md` (maxim
 (background normalisation as a zero-freedom arm). Each records the expectations stated before the run and the matching `RESULT_*.md`
 scores them, including the ones that were wrong. The evidence runs took 4-8 h each on 30 cores; the `.jsonl` files hold every
 per-galaxy result so the metrics scripts re-run in seconds without the sampler.
+
+Added for v2.0.1 (2026-11-01/05), in run order: `PREREG_BURKMU_20261101.md` (Burkert with the core-surface-density prior), `PREREG_TWOCENTRE_20261102.md` and `PREREG_TWOCENTRE_B_20261102.md` (Milky Way + LMC solved together; host potential inside a satellite's relation), `PREREG_H2_20261103.md` (molecular gas added to the baryons; K2 FAILED, the expected direction was wrong), `PREREG_RHOC_ENV_20261105.md` (rho_c against environment; null), `PREREG_RHOC_CORR_20261105.md` (rho_c against 13 galaxy properties, Holm-corrected), `PREREG_SIGMAFREE_20261105.md` (sigma free within the BTFR scatter; K1 and K3 FAILED, the stated mechanism was retracted), `PREREG_DIVERSITY_20261105.md` (galaxy pairs matched in baryons), `PREREG_DMS_20261105.md` (DiskMass baryon fractions with no free parameter; its BTFR item was void because the DiskMass inclinations are Tully-Fisher based, recorded in the RESULT). The 11/05 runs take seconds to a minute on 2 cores.
 
 ## AI usage
 
