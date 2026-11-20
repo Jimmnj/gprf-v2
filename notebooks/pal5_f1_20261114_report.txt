@@ -1,0 +1,28 @@
+=== (A) record method, test5 verbatim with the addendum inputs
+-- P (record convention, a = r_h/1.305)
+   --- rho_c = 10^7.42 Msun/kpc^3 (0.026 Msun/pc^3) ---
+   Pal 5      M 1.3e+04 r_h 20.4 pc R  17.3 kpc | sigma_GC 2.70 km/s r_c  215 pc r_J   52 pc rho_amb 2.5e+06 | nb/M* (<r_h) 2.4e-01  (<r_J) 2.23 | crossover 27 pc
+   --- rho_c = 10^7.45 Msun/kpc^3 (0.028 Msun/pc^3) ---
+   Pal 5      M 1.3e+04 r_h 20.4 pc R  17.3 kpc | sigma_GC 2.70 km/s r_c  208 pc r_J   52 pc rho_amb 2.5e+06 | nb/M* (<r_h) 2.5e-01  (<r_J) 2.32 | crossover 27 pc
+   --- rho_c = 10^8.00 Msun/kpc^3 (0.100 Msun/pc^3) ---
+   Pal 5      M 1.3e+04 r_h 20.4 pc R  17.3 kpc | sigma_GC 2.70 km/s r_c  110 pc r_J   52 pc rho_amb 2.5e+06 | nb/M* (<r_h) 6.2e-01  (<r_J) 5.43 | crossover 18 pc
+-- C (DF1-F1, a = r_h)
+   --- rho_c = 10^7.42 Msun/kpc^3 (0.026 Msun/pc^3) ---
+   Pal 5      M 1.3e+04 r_h 20.4 pc R  17.3 kpc | sigma_GC 2.70 km/s r_c  215 pc r_J   52 pc rho_amb 2.5e+06 | nb/M* (<r_h) 3.3e-01  (<r_J) 2.42 | crossover 28 pc
+   --- rho_c = 10^7.45 Msun/kpc^3 (0.028 Msun/pc^3) ---
+   Pal 5      M 1.3e+04 r_h 20.4 pc R  17.3 kpc | sigma_GC 2.70 km/s r_c  208 pc r_J   52 pc rho_amb 2.5e+06 | nb/M* (<r_h) 3.5e-01  (<r_J) 2.52 | crossover 28 pc
+   --- rho_c = 10^8.00 Msun/kpc^3 (0.100 Msun/pc^3) ---
+   Pal 5      M 1.3e+04 r_h 20.4 pc R  17.3 kpc | sigma_GC 2.70 km/s r_c  110 pc r_J   52 pc rho_amb 2.5e+06 | nb/M* (<r_h) 8.8e-01  (<r_J) 5.91 | crossover 17 pc
+=== (B) dwarf protocol (n9 + df1 sig_one verbatim)
+REPRODUCE: DF4 old inputs at 10^7.45, host: 17.31 km/s (record 17.3; DF-1 rep 17.31)
+Pal 5: M_b 1.34e+04, r_h 20.4 pc, R_gc 17.27 kpc, sigma 2.70 km/s, rho_amb 10^6.39
+-- P (a = r_h/1.305): x_b at centre 0.50
+   rho_c 10^7.42: M*(<r_h) 6701 | nb/M* excess 0.108, + ambient 0.121 | 0.7 sigma-equiv
+   rho_c 10^7.45: M*(<r_h) 6701 | nb/M* excess 0.116, + ambient 0.129 | 0.7 sigma-equiv
+   rho_c 10^8.00: M*(<r_h) 6701 | nb/M* excess 0.437, + ambient 0.450 | 2.5 sigma-equiv
+   bar nb/M* = 0.1 at rho_c 10^7.34; at 1 sigma-equiv (0.179): see the row values
+-- C (DF1-F1, a = r_h): x_b at centre 0.39
+   rho_c 10^7.42: M*(<r_h) 4738 | nb/M* excess 0.163, + ambient 0.182 | 1.0 sigma-equiv
+   rho_c 10^7.45: M*(<r_h) 4738 | nb/M* excess 0.176, + ambient 0.195 | 1.1 sigma-equiv
+   rho_c 10^8.00: M*(<r_h) 4738 | nb/M* excess 0.659, + ambient 0.677 | 3.8 sigma-equiv
+   bar nb/M* = 0.1 at rho_c 10^7.16; at 1 sigma-equiv (0.179): see the row values

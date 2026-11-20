@@ -31,3 +31,5 @@ hostf 0 reproduces the spherical two-halo solve (3.07e10 within 30 kpc in the 1D
   TB4 Reading: eq. (1) is a response rule, not a medium in the total potential; "compressible medium" language retired; (A') scoped to the body's own phi_b (reading; JM rules; canon-level)
   TB5 LMC concession unchanged from LIT_LMC_MASS sec 4 (reading)
 # END [RATIFIED JM 2026-11-02 19:20]
+
+CORRECTION 2026-11-16 (BF-6; JM ruling 2026-11-16 23:20). TB2 / TB3 ('fatal for every satellite') were computed with the satellite held at rest in the host's full potential drop, uniform part included (twocentre_b_20261102.py l.29). A satellite in free fall feels only the host's tides (a quadrupole, scale ~ sigma_sat D / v_c ~ 15 kpc for the LMC [T2]), so TB2 / TB3 hold for a satellite held at rest, not for one in orbit. TB4's conclusion (eq. (1) as a response rule) stands on other grounds: canon line 2026-11-16 BF-6. No re-run was made.

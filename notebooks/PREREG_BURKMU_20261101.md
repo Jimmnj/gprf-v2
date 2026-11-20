@@ -3,7 +3,7 @@ Written 2026-11-01 19:58 (JM "all" 19:41). Stamp = JM launching the run. Motivat
 
 ## Arm M
 Burkert v^2 as in cdm3_ns_20261031.py (arm K code path). Priors: log r_c ~ U[-1, 2] kpc (as K); log mu_0 = log(rho_0 r_c) ~ N(2.15, 0.2) Msun pc^-2 (Donato et al. 2009, the band drawn in Fig. 4); rho_0 = mu_0 / r_c. Nuisances, likelihood, sampler identical to every other arm (log Upsilon_d, log Upsilon_b N(., 0.1); D, i Gaussian at SPARC errors; sig_int 0.03 and 0.06; dynesty nlive 300, dlogz 0.1, rwalk). 147 galaxies x 2 sig_int = 294 jobs. Script burkmu_ns_20261101.py (copy of cdm3_ns with the M transform); pilot OK in the VM (DDO064: M -9.95 vs K -10.87 at nlive 100, ln L_max equal).
-Command (5950X, WSL): cd /mnt/c/Users/jm/source/repos/gprf/notebooks && python3 burkmu_ns_20261101.py --arms M --sig 0.03,0.06 --procs 30
+Command (5950X, WSL): cd <repo>/notebooks && python3 burkmu_ns_20261101.py --arms M --sig 0.03,0.06 --procs 30
 
 ## Metrics (at each arm's preferred sig_int; also at 0.03)
 J1 sum Delta ln Z, median, tail counts, bulk (|d| <= 20) for M - A, M - K, M - D, M - U. J2 Delta ln L_max M - A, M - K. J3 distance shifts beyond 2 / 3 sigma for M. J4 posterior compression of log mu_0 (does the data move it off the prior?) and effective parameter count.

@@ -1,0 +1,22 @@
+PREREG_MARG_20261030 metrics -- arms A (relation, rho_c free) and B (RAR function); nuisances Ud, Ub, D, i with Li+2018-style priors; N gal A=147 B=147
+
+M1 per-point rms log(g_obs/g_model) after marginalisation (Lelli points): A 0.045 (N 2696) | B 0.056 (N 2696)
+   baselines at fixed nuisances: universal rho_c 0.155, relation(3) 0.140, RAR function 0.133; per-galaxy rho_c (Table 2) 0.081 vs RAR M/L free 0.079
+   window bins (log g_bar/a0): residual sd  A | B
+   -1.75..-1.50  N  166  resid sd 0.046 | 0.057   meas-only 0.114 | 0.113   intrinsic est. 0.000 | 0.000
+   -1.50..-1.25  N  356  resid sd 0.040 | 0.049   meas-only 0.122 | 0.135   intrinsic est. 0.000 | 0.000
+   -1.25..-1.00  N  360  resid sd 0.044 | 0.054   meas-only 0.116 | 0.125   intrinsic est. 0.000 | 0.000
+   -1.00..-0.75  N  338  resid sd 0.039 | 0.054   meas-only 0.105 | 0.120   intrinsic est. 0.000 | 0.000
+   -0.75..-0.50  N  287  resid sd 0.035 | 0.054   meas-only 0.098 | 0.111   intrinsic est. 0.000 | 0.000
+   -0.50..-0.25  N  259  resid sd 0.037 | 0.050   meas-only 0.097 | 0.107   intrinsic est. 0.000 | 0.000
+M2 note: the measurement-only term here excludes the M/L term (it enters g_bar, i.e. the x axis, not the residual at fixed curve) and velocity errors are propagated fully; after marginalisation the fit has already absorbed part of these errors, so the subtraction can over-correct toward zero.
+
+M3 fitted log rho_c (arm A, N=147): sd 0.598 (before, fixed nuisances: 0.68); median 7.41; sd after removing M_b and Sigma_h trends 0.570 (before 0.65)
+   OLS log rho_c = 9.30 -0.236 log Mb +0.255 log Sigma_h +0.013 f_gas ; 95%: Mb [-0.495,+0.021] Sigma_h [+0.031,+0.496] f_gas [-0.828,+0.843]; resid sd 0.570
+   before (relation 3, fixed nuisances): -0.365 / +0.268 [95%% from B.1: Sigma_h +0.14..+0.62 with mass only] / -0.93 [-1.71,-0.14]
+M4 arm A nuisance shifts: dlogUd/0.1dex median +0.00 rms 1.82 | zD median +0.00 rms 0.98 | zi median -0.00 rms 0.76 | |z|>2: Ud 27, D 7, i 6 of 147
+M4 arm B nuisance shifts: dlogUd/0.1dex median +0.30 rms 2.50 | zD median -0.05 rms 1.40 | zi median -0.14 rms 1.10 | |z|>2: Ud 50, D 16, i 10 of 147
+
+D1 scatter tension: RESOLVED   (M1 A 0.045 vs B 0.056; max window intrinsic A 0.000)
+D2 rho_c patterns: ERROR-DRIVEN (one or both intervals include zero)   (Sigma_h slope +0.255 [+0.031,+0.496]; f_gas +0.013 [-0.828,+0.843])
+D3 nuisance guard: pooled rms z  A 1.27 vs B 1.77 -> ok

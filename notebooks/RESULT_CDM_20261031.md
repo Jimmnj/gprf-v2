@@ -48,3 +48,7 @@ The honest B.2 sentence is no longer "CDM not scored". It is: on SPARC rotation 
 
 ## 9. Follow-up prereg candidates
 PREREG_CDM2: A at sig_int {0.03, 0.06}; cored halo arm; logL_max for U/B/A (M4).
+
+## CORRECTION 2026-11-19 17:24 (BF-61; ruled JM 2026-11-19 17:24; BALLOT RULING 2026-11-19 17:24)
+> **JM 2026-11-19 17:24:** "recs  accepted , haubner downloaded"
+Sec 2's 'Every arm prefers 0.03 dex intrinsic scatter in v' is WRONG: sig_int is the intrinsic scatter in log g: marg_ns_20261030.py l.5 and l.33 (variance ev^2 + (sig_int v ln10/2)^2) and PREREG_NS_20261030 l.13. 0.03 dex in log g is 0.015 dex in log v. No number in the note changes; the note says 'in log g'. Nothing above this section is changed.

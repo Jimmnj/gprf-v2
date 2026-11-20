@@ -17,3 +17,17 @@ T3 (report only): pISO Case-I asymptotic v^2 = 4 pi G rho_0 R_C^2 vs the relatio
 (d) Text (HELD), new item in sec 6 or App B/E: "The DiskMass Survey measures the stellar vertical dispersions of 30 face-on spirals and from them the baryonic fraction of the rotation at 2.2 h_R, F_b = V_b/V_c = 0.57 (median), independently of the rotation curve. Solving eq. (1) at the universal rho_c for each galaxy's baryonic mass and scale length predicts F_b = 0.66 (median), 0.09 above the measurement with 0.13 rms; MOND, with no halo, predicts 1 (Angus et al. 2015). The offset has the sign expected if these spirals carry rho_c above the universal value, as their SPARC analogues do [RESULT_DMS_20261105]." Refs to add: Bershady et al. 2010, Martinsson et al. 2013a,b, Angus et al. 2015 (+ Milgrom 2015 reply, Aniyan et al. 2016 if read).
 ## 3. Ballot: DMS-1 T1 scoring (PASS with systematic); DMS-2 T2 void (prereg error); DMS-3 text (d). 
 # END
+
+## CORRECTION POINTER 2026-11-12 01:28 (DM-5; ruled JM 2026-11-11 23:15) -- no rewrite above
+SUPERSEDED by CHECK_NP17_DISKMASS_20261111.md secs 1-2: (i) "MOND, F_b = 1 by construction, is off by +0.435" (sec 1) and reading (a) "MOND misses by 0.4" -- the "1" was Claude's PREREG_DMS sec 1 line, misattributed to Angus et al. 2015 (F1); in this variable MOND gives 0.66-0.85, offset +0.08 to +0.25 (F2); like for like MOND matches as well as eq. (1): +0.078 rms 0.106 (RAR function) against +0.091 rms 0.130 (F3). (ii) Text (d) "predicts F_b = 0.66 (median)": the median of the predictions is 0.695 (csv Fb_pred_v); 0.66 is 0.57 + 0.09 (F4). (iii) "independently of the rotation curve": only the disc mass is; F_b divides by the observed V_c (F5). (iv) Caveat (c)(2) on Aniyan understates: factor ~2 in surface density moves the datum to about 0.8 (F7). The T1 score (median +0.091, rms 0.130) STANDS.
+
+## ADDENDUM 2026-11-12 01:28 (DM-6) -- MOND in the DMS variable, read from the csv [UNRATIFIED until JM stamps]
+Script mond_fb_check_csv_20261112.py (= mond_fb_check_20261111.py reading dms_fb_20261105.csv directly; logic verbatim); report mond_fb_check_csv_20261112_report.txt; run 01:26:48 EST, device VM. Expectation (written first): identical to the 11/11 transcribed run. RESULT: IDENTICAL, every printed number (diff against the 11/11 footer empty).
+| | median F_b | median offset from DMS | rms |
+|---|---|---|---|
+| DMS measured | 0.565 | - | - |
+| eq. (1), universal rho_c | 0.695 | +0.091 | 0.130 |
+| MOND like-for-like, RAR / simple / standard | 0.659 / 0.656 / 0.725 | +0.078 / +0.075 / +0.155 | 0.106 / 0.105 / 0.159 |
+| MOND own masses, RAR / simple / standard | 0.727 / 0.719 / 0.854 | +0.127 / +0.120 / +0.250 | - |
+Per galaxy, eq. (1) minus MOND (RAR) like for like: +0.005 (median). Excluding UGC 8196: +0.078 / +0.076 / +0.157, rms 0.102 / 0.099 / 0.160. Limits: algebraic MOND at 2.2 h_R, not a QUMOND disc; schematic baryon model inherited from dms_fb_20261105.py.
+Reading [T3]: the DMS check does not separate eq. (1) from MOND. By the PREREG_DMS criteria (|median| <= 0.10, rms <= 0.15) MOND passes with the RAR and simple functions and fails the median with the standard function (+0.155). A check both pass from the same masses (DM-2 wording, ruled).

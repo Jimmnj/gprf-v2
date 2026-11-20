@@ -7,7 +7,7 @@ rho_nb = A exp[S(x_b) - dphi_nb/sigma^2] - rho_amb, log A = 6.75 (Msun/kpc^3), i
 
 ## Run (bg_ns_20261031.py; pilot 2 galaxies OK 21:25)
 Arm G at sig_int {0.03, 0.06}; 147 galaxies, 294 jobs; nuisances, priors, likelihood, nlive 300, dlogz 0.1, rwalk as PREREG_NS. Output bg_ns_20261031.jsonl (with logLmax, implied log rho_c and x_b0 at posterior-median nuisances).
-Command (5950X): cd /mnt/c/users/jm/source/repos/gprf/notebooks && nohup python3 bg_ns_20261031.py --sig 0.03,0.06 --procs 30 > bg_ns_run.log 2>&1 &
+Command (5950X): cd <repo>/notebooks && nohup python3 bg_ns_20261031.py --sig 0.03,0.06 --procs 30 > bg_ns_run.log 2>&1 &
 
 ## Metrics (each arm at its preferred sig_int; also matched 0.03)
 J1 sum Delta logZ (G - U), (G - B), (G - N), (G - D), (A - G); median, tails, bulk as before.
