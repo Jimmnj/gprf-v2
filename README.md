@@ -7,11 +7,12 @@
 Source, analysis scripts and pre-registrations for
 
 > J. R. Marsen (2026), *Can galaxy dynamics be explained by real non-baryonic mass and Newtonian gravity?*,
-> v2.0.1, Zenodo, [doi:10.5281/zenodo.23815559](https://doi.org/10.5281/zenodo.23815559)
-> (v2.0.0: [doi:10.5281/zenodo.23748074](https://doi.org/10.5281/zenodo.23748074))
+> v2.0.2, Zenodo, [doi:10.5281/zenodo.24407159](https://doi.org/10.5281/zenodo.24407159)
+> (v2.0.1: [doi:10.5281/zenodo.23815559](https://doi.org/10.5281/zenodo.23815559); v2.0.0: [doi:10.5281/zenodo.23748074](https://doi.org/10.5281/zenodo.23748074))
 > (all versions: [10.5281/zenodo.23748073](https://doi.org/10.5281/zenodo.23748073)).
 
-This repository is archived on Zenodo: release v2.0.1 (tag `gprf-v2.0.1`) is
+This repository is archived on Zenodo: release v2.0.2 (tag `gprf-v2.0.2`) is
+[doi:10.5281/zenodo.24407168](https://doi.org/10.5281/zenodo.24407168); release v2.0.1 (tag `gprf-v2.0.1`) is
 [doi:10.5281/zenodo.23995058](https://doi.org/10.5281/zenodo.23995058); release v2.0.0 (tag `gprf-v2`, commit 047af73) is
 [doi:10.5281/zenodo.23781856](https://doi.org/10.5281/zenodo.23781856); all versions:
 [10.5281/zenodo.23781855](https://doi.org/10.5281/zenodo.23781855).
@@ -20,7 +21,7 @@ This repository is archived on Zenodo: release v2.0.1 (tag `gprf-v2.0.1`) is
 
 | Path | Contents |
 |---|---|
-| `paper/` | The posted PDFs (v2.0.0, v2.0.1) and their LaTeX sources; `Marsen_2026_v2.0.x_annotated.tex` is the same text with the provenance tags (`[RESULT_...]`, `[script.py]`) that link each number to the record below; `figs_v2/` the figures |
+| `paper/` | The posted PDFs (v2.0.0, v2.0.1, v2.0.2) and their LaTeX sources; `Marsen_2026_v2.0.x_annotated.tex` is the same text with the provenance tags (`[RESULT_...]`, `[script.py]`) that link each number to the record below; `CHANGES_v2.0.2.md` the full list of changes from v2.0.1 (35 items); `figs_v2/` the figures |
 | `notebooks/` | Scripts (`*.py`), their outputs (`*.csv`), the result records (`RESULT_*.md`), the pre-registrations (`PREREG_*.md`, `RESULT_DWARF_PREREG_*.md`) and one derivation note |
 | `data/` | Small published tables used in the environment and lensing tests (see `data/README.md`) |
 | `tools/fetch_sparc.py` | Downloads SPARC (not redistributed) into `sparc_galaxy_data/` |
@@ -96,6 +97,8 @@ scores them, including the ones that were wrong. The evidence runs took 4-8 h ea
 per-galaxy result so the metrics scripts re-run in seconds without the sampler.
 
 Added for v2.0.1 (2026-11-01/05), in run order: `PREREG_BURKMU_20261101.md` (Burkert with the core-surface-density prior), `PREREG_TWOCENTRE_20261102.md` and `PREREG_TWOCENTRE_B_20261102.md` (Milky Way + LMC solved together; host potential inside a satellite's relation), `PREREG_H2_20261103.md` (molecular gas added to the baryons; K2 FAILED, the expected direction was wrong), `PREREG_RHOC_ENV_20261105.md` (rho_c against environment; null), `PREREG_RHOC_CORR_20261105.md` (rho_c against 13 galaxy properties, Holm-corrected), `PREREG_SIGMAFREE_20261105.md` (sigma free within the BTFR scatter; K1 and K3 FAILED, the stated mechanism was retracted), `PREREG_DIVERSITY_20261105.md` (galaxy pairs matched in baryons), `PREREG_DMS_20261105.md` (DiskMass baryon fractions with no free parameter; its BTFR item was void because the DiskMass inclinations are Tully-Fisher based, recorded in the RESULT). The 11/05 runs take seconds to a minute on 2 cores.
+
+Added for v2.0.2 (2026-11-08/09): `PREREG_NGC1560_20261108.md` (out-of-sample test on NGC 1560, which is not in SPARC; scored in `RESULT_NGC1560_20261108.md`), `PREREG_FEATURE_AXISYM_20261109.md` (whether disc geometry restores NGC 1560's gas feature; scored in `RESULT_FEATURE_AXISYM_20261109.md`) and `PREREG_BIGSPARC_20261108.md` (predictions for BIG-SPARC, fixed before its mass models exist; not yet scored).
 
 ## AI usage
 
